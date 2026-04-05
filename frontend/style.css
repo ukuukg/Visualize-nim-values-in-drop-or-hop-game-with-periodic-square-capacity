@@ -1,0 +1,17 @@
+#nim-value-table-title {
+  text-align: center;
+  color: red;
+  visibility: hidden;
+}
+
+#nim-value-table {
+  border-collapse: collapse; 
+}
+
+#nim-value-table th, #nim-value-table td {
+  border: 1px solid black; 
+  width: 30px;   
+  height: 30px;
+  text-align: center;       
+  vertical-align: middle;
+}
