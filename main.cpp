@@ -33,6 +33,7 @@ int process(int a, int b, int c){
 
 int main(int argc, char* argv[]){
     ofstream ofs("output.txt");
+    ofstream ofs_formatted("output_formatted.txt");
     if(argc!=4){
         ofs<<"error\n";
         return 1;
@@ -103,7 +104,9 @@ int main(int argc, char* argv[]){
     for(int i=0;i<=x_upper;i++){
         for(int j=0;j<=y_upper;j++){
             ofs<<nim_table[i][j];
+            ofs_formatted<<nim_table[i][j]<<" ";
         }
         ofs<<"T";
+        ofs_formatted<<endl;
     }
 }
