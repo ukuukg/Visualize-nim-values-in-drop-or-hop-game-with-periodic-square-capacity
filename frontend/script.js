@@ -21,16 +21,16 @@ document.getElementById("confirm").addEventListener("click",(e)=>{
                 for(let j=0;j<result[i].length;j++){
                     switch(result[i][j]){
                         case "0":
-                            p=p+"<td style=\"background-color: #F0E68C\">0</td>";
+                            p=p+`<td style="background-color: #${document.getElementById("zero_color").value}">0</td>`;
                         break;
                         case "1":
-                            p=p+"<td style=\"background-color: #87CEFA\">1</td>";
+                            p=p+`<td style="background-color: #${document.getElementById("one_color").value}">1</td>`;
                         break;
                         case "2":
-                            p=p+"<td style=\"background-color: #FF69B4\">2</td>";
+                            p=p+`<td style="background-color: #${document.getElementById("two_color").value}">2</td>`;
                         break;
                         case "3":
-                            p=p+"<td style=\"background-color: #90EE90\">3</td>";
+                            p=p+`<td style="background-color: #${document.getElementById("three_color").value}">3</td>`;
                         break;
                     }
                 }
